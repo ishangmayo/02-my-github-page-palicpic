@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/windows.png">
     <title>IshaPortfolio.ph</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,73 +14,303 @@
         </div>
         <div class="desktop-nav">
             <a href="#about">
-                <img src="assets/about.png" alt="About">
+                <img src="assets/controlpanel.png" alt="About">
                 <span>About</span>
             </a>
-            <a href="#skills">
-                <img src="assets/skills.png" alt="Skills">
-                <span>Skills</span>
-            </a>
             <a href="#projects">
-                <img src="assets/projects.png" alt="Projects">
+                <img src="assets/internetexplorer.png" alt="Projects">
                 <span>Projects</span>
             </a>
             <a href="#contact">
-                <img src="assets/contact.png" alt="Contact">
+                <img src="assets/email.png" alt="Contact">
                 <span>Contact</span>
             </a>
         </div>
     </div>
 
-    <div class ="window">
-        <div class = "title-bar">
-            <img src="assets/thiscomputer.png"> My Computer 
+    <div class="window" id="projects">
+        <div class="title-bar">
+            <img src="assets/internetexplorer.png"> Internet Explorer
             <div class="butts"> <img src="assets/trigram.png"> </div>
         </div>
-
-        <div class = "menu-bar">
+        <div class="menu-bar">
             <button>File</button>
             <button>Edit</button>
-            <button>Display</button>
+            <button>View</button>
+            <button>Favorites</button>
             <button>Tools</button>
-            <button>?</button>
+            <button>Help</button>
         </div>
-
+        <div class="menu-bar">
+             <img src="assets/undoredo.png">
+        </div>
         <div class="content">
-            <div class="section" id="about">
-                <h2>About Me!</h2>
-                <div class="about">
-                    <div class="photo">
-                        <img src="assets/isha.jpg">
+            <div class="ie-toolbar">
+                <div class="ie-address-bar">
+                <input id="address" type="text" value="https://youtube.com/IshaProjects" readonly>
+            </div>
+        </div>
+            <div class="youtube-ui">
+                <div class="yt-header">
+                    <div class="yt-logo-space">
+                        <img src="assets/youtube.png" alt="YouTube" style="height: 40px;">
                     </div>
-                    <div class="bio">
-                        <div class="bio-box">
-                            <h3>Palicpic, Elisha A.</h3>
-                            <p>BSCS</p>
-                            <p>
-                               You can call me Isha for short! I’m currently a BS Computer Science undergraduate student with a 
-                               great interest in Software Engineering, Front-end Engineering, and UI/UX Design. Other than 
-                               that, I have lots of hobbies, mostly related to anything creative: Digital and traditional art, 
-                               crochet, and writing! Oh, and I also love playing games.
-                            </p>
+                    <div class="yt-search-bar">
+                        <input type="text" placeholder="Search" readonly>
+                        <button>Search</button>
+                    </div>
+                </div>
+                <div class="yt-nav">
+                    <span class="active">Videos</span>
+                    <span>Playlists</span>
+                    <span>Channels</span>
+                    <span>About</span>
+                </div>
+                <div class="yt-content">
+                    <div class="yt-video-grid">
+                        <div class="yt-video-item">
+                            <div class="yt-thumbnail">
+                                <video width="100%" height="100%" autoplay loop muted playsinline>
+                                    <source src="assets/recordings/sharedspace.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="yt-video-data">
+                                <h4 class="yt-video-title">Shared Space</h4>
+                                <p class="yt-video-info">by MySpace</p>
+                                <p class="yt-video-desc">
+                                    SharedSpace is a web-based art-sharing platform created using the MERN tech stack for the Young Software Engineers’ Society. It is designed for creatives to upload, showcase, and explore artworks through both private and public spaces. It includes features such as instant image sharing, a public Art Wall, voting systems, weekly challenges, leaderboards, and streak-based rewards to promote consistent engagement and creative growth. The platform welcomes community interaction, participation, and content moderation to maintain a safe, collaborative, and motivating environment for artists.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="yt-video-item">
+                            <div class="yt-thumbnail">
+                                <video width="100%" height="100%" autoplay loop muted playsinline>
+                                    <source src="assets/recordings/pabili.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="yt-video-data">
+                                <h4 class="yt-video-title">Pabili Justisya</h4>
+                                <p class="yt-video-info">by Skibidi Society</p>
+                                <p class="yt-video-desc">
+                                   Pabili Justisya is a Visual Novel game created for the Los Baños Game Jam 2025 using Godot. In Pabili Justisya, you're a humble sari-sari store owner with a mission: to uncover a killer. Talk to the townspeople, do your daily work, and maybe, along the way, discover the dark truth simmering beneath the surface.  
+                            </div>
+                        </div>
+                        <div class="yt-video-item">
+                            <div class="yt-thumbnail">
+                                <video width="100%" height="100%" autoplay loop muted playsinline>
+                                    <source src="assets/recordings/astromerca.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="yt-video-data">
+                                <h4 class="yt-video-title">AstroMerca</h4>
+                                <p class="yt-video-info">by CMSC 22 Groupmates <3</p>
+                                <p class="yt-video-desc">
+                                    AstroMerca is an e-commerce application created using Java and JavaFX. It is made to streamline interactions between buyer and seller by providing a secure and user-friendly environment. The program provides account-based access, allowing users to log in either as a Buyer or Seller to access relevant features.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="yt-video-item">
+                            <div class="yt-thumbnail">
+                                <video width="100%" height="100%" autoplay loop muted playsinline>
+                                    <source src="assets/recordings/leafee.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="yt-video-data">
+                                <h4 class="yt-video-title">Leafee</h4>
+                                <p class="yt-video-info">by Isha</p>
+                                <p class="yt-video-desc">
+                                   Leafee is an optimization program created using R and R Shiny. It finds the lowest-cost combination of mitigation projects that meets the goal of reduced pollutants. It evaluates feasibility and shows the most optimal mitigation projects through an interactive interface.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section" id="skills">
-                <h2>Skills and Expertise</h2>
-            </div>
-            <div class="section" id="projects">
-                <h2>Projects</h2>
-            </div>
-            <div class="section" id="contact">
-                <h2>Contact</h2>
-            </div>
         </div>
-
-
     </div>
 
+    <div class="window" id="contact">
+        <div class="title-bar">
+            <img src="assets/email.png"> Outlook Express
+            <div class="butts"> <img src="assets/trigram.png"> </div>
+        </div>
+        <div class="menu-bar">
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button>Tools</button>
+            <button>Message</button>
+            <button>Help</button>
+        </div>
+        <div class="menu-bar">
+             <img src="assets/undoredo.png">
+        </div>
+        <div class="content">
+            <div class="email-ui">
+                <div class="email-toolbar">
+                    <button>New Mail</button>
+                    <button>Reply</button>
+                    <button>Forward</button>
+                    <button>Delete</button>
+                </div>
+                <div class="email-body">
+                    <div class="email-headers">
+                        <p><strong>From:</strong> Elisha Palicpic &lt;ishangmayo@gmail.com&gt;</p>
+                        <p><strong>To:</strong> You &lt;visitor@ishaportfolio.ph&gt;</p>
+                        <p><strong>Subject:</strong> Heyyy </p>
+                    </div>
+                    <div class="email-message">
+                        <p>Hello!</p>
+                        <p>Thankks for checking out my portfolio! If you want to get in touch, just contact me using the following:</p>
+                        <ul>
+                            <li><strong>Email:</strong> <a href="mailto:ishangmayo@gmail.com">ishangmayo@gmail.com</a></li>
+                            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/palicpicea/">https://www.linkedin.com/in/palicpicea/</a></li>
+                            <li><strong>GitHub:</strong> <a href="https://github.com/ishangmayo">https://github.com/ishangmayo</a></li>
+                        </ul>
+                        <p>Looking forward to hearing from you!</p>
+                        <p>Best,</p>
+                        <p>Isha <3</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="window" id="about">
+        <div class="title-bar">
+            <img src="assets/controlpanel.png"> Control Panel
+            <div class="butts"> <img src="assets/trigram.png"> </div>
+        </div>
+        <div class="menu-bar">
+            <button>File</button>
+            <button>Edit</button>
+            <button>View</button>
+            <button>Favorites</button>
+            <button>Tools</button>
+            <button>Help</button>
+        </div>
+        <div class="menu-bar">
+             <img src="assets/undoredo.png">
+        </div>
+        <div class="content">
+            <div class="control-panel-container">
+                <div class="cp-sidebar">
+                    <h3>Skills Information</h3>
+                    <p>View basic information about this user.</p>
+
+                    <div class="skills-section">
+                        <div class="skills-category">
+                            <h3>Programming Languages</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-name">Python</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 85%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">C</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">HTML/CSS</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Java</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h3>Design & Creative Tools</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-name">Figma</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 70%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Clip Studio Paint</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Canva</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 90%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skills-category">
+                            <h3>Soft Skills</h3>
+                            <div class="skills-grid">
+                                <div class="skill-item">
+                                    <div class="skill-name">Creativity</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 95%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Adaptability</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 80%;"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-item">
+                                    <div class="skill-name">Time Management</div>
+                                    <div class="xp-bar">
+                                        <div class="xp-fill" style="width: 75%;"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cp-main-content">
+                    <div class="about">
+                        <div class="photo">
+                            <img src="assets/isha.jpg">
+                        </div>
+                        <div class="bio">
+                            <div class="bio-box">
+                                <h3>Palicpic, Elisha A.</h3>
+                                <p>BSCS</p>
+                                <p>
+                                    Hi! I'm Elisha A. Palicpic, but you can call me Isha. 
+                                    I'm a BS Computer Science undergraduate with a strong 
+                                    interest in Software Engineering, Front-end Development, 
+                                    and UI/UX Design: where logic meets creativity. When I'm 
+                                    not coding, you'll usually find me exploring creative outlets 
+                                    like digital and traditional art, crochet, and writing, 
+                                    or unwinding with a good game. I love building things, 
+                                    whether it's interfaces, systems, or pretty things in general, 
+                                    and I'm always excited to learn and experiment!
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <img src="assets/startbutton.png">
+        <img src="assets/trailing.png">
+    </div>
 
 </body>
 </html>
